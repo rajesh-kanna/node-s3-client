@@ -171,10 +171,10 @@ Creates an S3 client.
  * `s3RetryDelay` - how many milliseconds to wait before retrying an S3
    operation. Default 1000.
  * `multipartUploadThreshold` - if a file is this many bytes or greater, it
-   will be uploaded via a multipart request. Default is 20MB. Minimum is 5MB.
+   will be uploaded via a multipart request. Default is 20MB. Minimum is 0.5MB.
    Maximum is 5GB.
  * `multipartUploadSize` - when uploading via multipart, this is the part size.
-   The minimum size is 5MB. The maximum size is 5GB. Default is 15MB. Note that
+   The minimum size is 0.5MB. The maximum size is 5GB. Default is 15MB. Note that
    S3 has a maximum of 10000 parts for a multipart upload, so if this value is
    too small, it will be ignored in favor of the minimum necessary value
    required to upload the file.
